@@ -1,0 +1,5 @@
+<h1>Groups</h1>
+<input type="text" data-ng-model="name"/> <button type="submit" class="btn btn-info" data-ng-click="">Insert</button>
+<ul ng-repeat="group in groups | filter:name | orderBy:'name'">
+  <li><a>{{group.name}}</a></li>
+</ul>
